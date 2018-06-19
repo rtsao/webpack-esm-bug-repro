@@ -1,0 +1,19 @@
+{
+  "name": "webpack-esm-bug-repro",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "build": "webpack",
+    "serve": "static -p 34123",
+    "run:node-native": "node --experimental-modules index.mjs",
+    "run:node-webpack": "node --experimental-modules bundle.node.mjs",
+    "run:web-native": "open http://localhost:34123/native.html",
+    "run:web-webpack": "open http://localhost:34123/webpack.html"
+  },
+  "dependencies": {
+    "node-static": "^0.7.10",
+    "webpack": "^4.12.0",
+    "webpack-cli": "^3.0.8"
+  },
+  "license": "MIT"
+}
